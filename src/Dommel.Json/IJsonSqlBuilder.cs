@@ -59,4 +59,13 @@
         /// <inheritdoc />
         public string JsonValue(string column, string path) => $"JSON_VALUE({column}, '$.{path}')";
     }
+
+    /// <summary>
+    /// JSON SQL builder for SQL server.
+    /// </summary>
+    public class OracleSqlBuilder : Dommel.OracleSqlBuilder, IJsonSqlBuilder
+    {
+        /// <inheritdoc />
+        public string JsonValue(string column, string path) => $"JSON_VALUE({column}, '$.{path}')";
+    }
 }

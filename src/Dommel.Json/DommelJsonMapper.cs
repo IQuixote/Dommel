@@ -37,6 +37,7 @@ namespace Dommel.Json
             DommelMapper.AddSqlBuilder("sqliteconnection", new SqliteSqlBuilder());
             DommelMapper.AddSqlBuilder("npgsqlconnection", new PostgresSqlBuilder());
             DommelMapper.AddSqlBuilder("mysqlconnection", new MySqlSqlBuilder());
+            DommelMapper.AddSqlBuilder("oracleconnection", new MySqlSqlBuilder());
 
             // Add a custom SqlExpression<T> factory with JSON support
             DommelMapper.SqlExpressionFactory = (type, sqlBuilder) =>

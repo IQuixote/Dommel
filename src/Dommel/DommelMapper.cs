@@ -31,7 +31,8 @@ namespace Dommel
             ["sqlceconnection"] = new SqlServerCeSqlBuilder(),
             ["sqliteconnection"] = new SqliteSqlBuilder(),
             ["npgsqlconnection"] = new PostgresSqlBuilder(),
-            ["mysqlconnection"] = new MySqlSqlBuilder()
+            ["mysqlconnection"] = new MySqlSqlBuilder(),
+            ["oracleconnection"] = new OracleSqlBuilder()
         };
 
         static DommelMapper()

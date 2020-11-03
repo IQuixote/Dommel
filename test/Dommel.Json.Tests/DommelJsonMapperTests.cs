@@ -29,6 +29,7 @@ namespace Dommel.Json.Tests
             Assert.IsType<SqliteSqlBuilder>(DommelMapper.SqlBuilders["sqliteconnection"]);
             Assert.IsType<PostgresSqlBuilder>(DommelMapper.SqlBuilders["npgsqlconnection"]);
             Assert.IsType<MySqlSqlBuilder>(DommelMapper.SqlBuilders["mysqlconnection"]);
+            Assert.IsType<OracleSqlBuilder>(DommelMapper.SqlBuilders["oracleconnection"]);
         }
 
         [Fact]
